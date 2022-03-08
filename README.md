@@ -1,6 +1,6 @@
 # Web-O-Mania-WeCare
 This is my submission for WEB-O-MANIA.
-'WeCare', A Fully Dynamic & Complete Covid Guideline.
+'WeCare', A Fully Dynamic & Complete Covid Guideline Website.
 
 Just Execute "index.html" to dive deep into Covid information.
 
