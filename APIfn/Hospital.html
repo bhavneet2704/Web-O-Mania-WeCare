@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    
+    <style>
+        .a
+{
+    margin: 1%;  
+}
+a
+{
+width:100px;
+}
+*
+{
+margin:0px;
+padding:0px;
+}
+input[type=submit]
+{
+    background-color: #f2a344;
+    color: black;
+    font-size: larger;
+    width: 165px;
+    height: 56px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+input
+{
+border: 3px solid #f2522e;
+background-color:#ededef;
+}
+input:hover
+{
+border:px solid #383959;
+}
+
+input[type=submit]
+{
+    background-color: #f88120;
+    color: black;
+    width: 165px;
+    height: 36px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    font-size: larger;
+}
+
+#submit:hover
+{
+    cursor: pointer;
+}
+body{
+    background-image:url(background/m1.jpg);
+       background-position: center;
+       background-attachment: fixed;
+       background-size: cover;
+        background-repeat: no-repeat;
+  color: var(--text_dark);
+  padding: 70px;
+}
+#add
+{
+    padding: 10px;
+    margin: auto;
+  width: 40%;
+  color: black;
+  background-color: #7a99ad;
+  margin-bottom: 20px;
+  border: 1px solid #f2522e;
+}
+@media screen and (max-width: 400px) {
+    .a
+{
+    margin: 1%;
+    
+}
+  }
+input {font-weight: 500;}
+
+
+  
+  
+
+    </style>
+</head>
+
+<body >
+ 
+    <center>
+<div class="container">
+    <label for="fname">𝐄𝐧𝐭𝐞𝐫 𝐒𝐭𝐚𝐭𝐞 𝐍𝐚𝐦𝐞:</label>
+    <input type="text" id="fname" name="fname" style="font-size: 10pt; height: 20px; width:280px;" >
+    <input type="submit" onclick="save()" value="Search">
+   
+</div>
+<br>
+<br>
+<div id="data">
+   
+</div>
+</center>
+<script>function save()
+    { 
+    var url="https://api.rootnet.in/covid19-in/hospitals/medical-colleges";
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET',url);
+    xhr.onreadystatechange=()=>
+    {
+        var count=0;
+        if(xhr.readyState==4 && xhr.status==200)
+        {
+            var m=JSON.parse(xhr.responseText);
+            m=m.data.medicalColleges;
+            var x123=document.getElementById("fname").value;
+            x123=x123.toUpperCase();
+            var x=document.getElementById("data");
+            for(var i=0;i<m.length;i++)
+            {
+                var p=m[i].state.toUpperCase();
+                
+                if(p===x123)
+                {
+                    count++;
+                var temp=document.createElement("div");
+                   temp.style.width="35%";
+                temp.setAttribute('id','add');
+                var z=document.createElement("p");
+                  z.innerHTML=`State ⇨ ${m[i].state}`; 
+                  z.style.padding="6px";
+                var b=document.createElement("p");
+                b.innerHTML=`Name ⇨ ${m[i].name}`; 
+                b.style.padding="6px";
+                var b1=document.createElement("p");
+                b1.innerHTML=`City ⇨ ${m[i].city}`; 
+                 b1.style.padding="6px";
+                var b2=document.createElement("p");
+                b2.innerHTML=`Ownership ⇨ ${m[i].ownership}`;  
+               b2.style.padding="6px";
+               var b21=document.createElement("p");
+                b21.innerHTML=`AdmissionCapacity ⇨ ${m[i].admissionCapacity}`;  
+               b21.style.padding="6px";
+               var b211=document.createElement("p");
+               b211.innerHTML=`HospitalBeds ⇨ ${m[i].hospitalBeds}`;  
+              b211.style.padding="6px";
+               temp.appendChild(z);
+                temp.appendChild(b);
+                temp.appendChild(b1);
+                temp.appendChild(b2); 
+                temp.appendChild(b21);
+                temp.appendChild(b211);
+                x.appendChild(temp);
+                }
+    
+            }
+            if(count==0)
+            {
+                location.reload();
+                alert("Not Valid");
+            }
+        }
+    }
+    xhr.send();
+    
+    }
+    function d()
+    { 
+    var url="https://api.rootnet.in/covid19-in/hospitals/medical-colleges";
+    var xhr= new XMLHttpRequest();
+    xhr.open('GET',url);
+    xhr.onreadystatechange=()=>
+    {
+        var count=0;
+        if(xhr.readyState==4 && xhr.status==200)
+        {
+            var m=JSON.parse(xhr.responseText);
+            m=m.data.medicalColleges;
+            var x123=document.getElementById("fname").value;
+            x123=x123.toUpperCase();
+            var x=document.getElementById("data");
+            for(var i=0;i<m.length;i++)
+            {
+                var p=m[i].state.toUpperCase();
+                var temp=document.createElement("div");
+                   temp.style.width="35%";
+                temp.setAttribute('id','add');
+                var z=document.createElement("p");
+                  z.innerHTML=`State ⇨ ${m[i].state}`; 
+                  z.style.padding="6px";
+                var b=document.createElement("p");
+                b.innerHTML=`Name ⇨ ${m[i].name}`; 
+                b.style.padding="6px";
+                var b1=document.createElement("p");
+                b1.innerHTML=`City ⇨ ${m[i].city}`; 
+                 b1.style.padding="6px";
+                var b2=document.createElement("p");
+                b2.innerHTML=`Ownership ⇨ ${m[i].ownership}`;  
+               b2.style.padding="6px";
+               var b21=document.createElement("p");
+                b21.innerHTML=`AdmissionCapacity ⇨ ${m[i].admissionCapacity}`;  
+               b21.style.padding="6px";
+               var b211=document.createElement("p");
+               b211.innerHTML=`HospitalBeds ⇨ ${m[i].hospitalBeds}`;  
+              b211.style.padding="6px";
+               temp.appendChild(z);
+                temp.appendChild(b);
+                temp.appendChild(b1);
+                temp.appendChild(b2); 
+                temp.appendChild(b21);
+                temp.appendChild(b211);
+                x.appendChild(temp);
+                }
+    
+            
+        }
+    }
+    xhr.send();
+    
+    }
+    
+    </script>   
+</body>
+</html>

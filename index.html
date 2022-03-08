@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCare Covid Management</title>
+    
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- External CSS files -->
+  
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/news.css" />
+    <link rel="stylesheet" type="text/css" href="css/articleediting.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/project.css" /> 
+    
+    <link rel="stylesheet" type="text/css" href="css/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="css/rvw.css" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo2.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <link rel="stylesheet" href="css/WeCare.css">   
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+   
+    <!-- Javascript files -->
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+   
+    
+      
+</head>
+<body>
+  <div id="loverlay" style="text-align: center;">
+    <div class="loader">
+      <div class="cssload-loader">WeCare</div>
+      <br>
+      <p>Loading...</p>
+    </div>
+  </div>
+  
+        <div class="container yellow myNav">
+         
+          <a class="alogo animated bounceInDown" href="#"><img src="APIfn/background/m.png" 
+            width="120px" height="60px"  style="position: absolute; display: inline; float: left; margin-left: -200px; margin-top: -20px; border-radius: 50%;" /></a>
+          
+          <a class="pull" href="#aboutUs">STATISTICS</a>
+          <a class="pullRight" href="#newsFeed">NEWS & ARTICLES</a>
+         
+          <a class="pullRight" href="Review_final/userrvw.html">TOP ADVICE</a>
+          <a class="pullRight" href="Beyond_The_BLogs_BY_BHAVNEET/index.html">RECENT BLOGS</a>
+          <a class="pullRight" href="APIfn/Hospital.html">HOSPITALS API</a>
+          <a class="pullRight" href="html/login.html">LOGIN</a>
+        </div>
+        
+
+    
+    <!-- trending section -->
+
+    <div class="container ts" id="trendingGames">
+      <!-- <h1 id="tg"  >TRENDING GAMES</h1> -->
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="img/c6.jpg" class="imgset" >
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="img/c5.jpg" class="imgset">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="img/c4.jpg" class="imgset" >
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="img/c3.jpg" class="imgset">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="img/c2.jpg" class="imgset" >
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="img/c1.jpg" class="imgset">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prevt" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+    
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <!-- Thumbnail images -->
+      <div class="rowt">
+        <div class="columnt">
+          <img class="demo cursor" src="img/c6.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="img/c5.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="img/c4.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="img/c3.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="img/c2.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+        </div>
+        <div class="columnt">
+          <img class="demo cursor" src="img/c1.jpg" style="width:100%" onclick="currentSlide(6)" alt="" >
+        </div>
+      </div>
+    </div> 
+    <!-- trending section end -->
+
+    <!-- News section -->
+    <div class="news" id="newsFeed">
+      <h1 id="nz">NEWS FEED</h1>
+     <marquee style="font-size: large;background-color: rgb(192, 241, 232);color: black;height: 10px;padding:20px;padding-bottom: 50px;margin-bottom: 20px;font-size: 35px;width: 80%;">Just take your cursor on the newsImages to read more!!</marquee>
+      <div class="main">
+         
+          <div class="view view-seventh">
+              <img class="newsImg" src="newsImages/n1.jpg" />
+              <div class="mask">
+                  <h2>Rise in covid Cases</h2>
+                  <p>One year ago, Covid teased a mystery giveaway that turned out to be Massive. What will this one be?</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+          <div class="view view-seventh">
+              <img class="newsImg" src="newsImages/n4.jpg" />
+              <div class="mask">
+                  <h2>Covaxin VS Covishield</h2>
+                  <p>A very big dilemma among people is to choose which vaccine?This is a big question.</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+          <div class="view view-seventh">
+            <img  class="newsImg" src="newsImages/n5.jpg" />
+            <div class="mask">
+                <h2>Remdesivir Shortage</h2>
+                <p>Demand does not match new transmog system and the
+                   grind is even worse than expected.</p>
+                <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+            </div>
+        </div>
+        <div class="view view-seventh">
+          <img  class="newsImg" src="newsImages/n2.jpg" />
+          <div class="mask">
+              <h2>Mass EFFECT</h2>
+              <p>Mass Effect: Legendary Edition project director says covid could make a comeback.</p>
+              <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+          </div>
+      </div>
+          <div class="view view-seventh">
+              <img src="newsImages/n3.jpg"  class="newsImg"/>
+              <div class="mask">
+                  <h2>Wash your hands</h2>
+                  <p>Prevention is better than cure .So please wash your hands.</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+          <div class="view view-seventh">
+              <img src="newsImages/n6.jpg"  class="newsImg"/>
+              <div class="mask">
+                  <h2>Covid Sucks</h2>
+                  <p>Corona has just changed all the recent trends from shopping to education</p>
+                  <a href="https://www.pcgamer.com/news/" class="info">Read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <!-- News section end -->
+
+
+
+    <!-- Article Section -->
+    
+    <div class="article">
+      <h1 id="art">Informative ARTICLES</h1>
+  <div class="lessons">
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/html.png">
+        <p class="nma">Preventions</p>
+      </div>
+      <p class="text-contents">
+        Several of this week's challenges revolve around the Storm, but none are so tough. Because the Storm is quicker to form .</p>
+        <br>
+        <a href="https://www.gamespot.com/articles/fortnite-season-6-week-9-challenges/1100-6491138/" target="_blank"><button class="rm">Read More</button></a>
+    </div>
+    
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+        <p class="nma">World Crisis</p>
+      </div>
+      <p class="text-contents">World Of Warships Celebrates Naval Museums With 17-Hour Livestream.You can virtually visit 15 museums.</p>
+        <br>
+        <a href="https://www.gamespot.com/articles/world-of-warships-celebrates-naval-museums-with-17-hour-livestream/1100-6491509/" target="_blank"><button class="rm">Read More</button></a>
+     
+    </div>
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/ruby.png">
+        <p class="nma">Major fallbacks</p>
+      </div>
+      <p class="text-contents">Treyarch outlines what's coming to Zombies as part of the mid-season update beginning May 20</p>
+      <br>
+        <a href="https://www.gamespot.com/articles/call-of-duty-black-ops-cold-war-zombies-outbreak-adding-first-main-quest/1100-6491512/" target="_blank"><button class="rm">Read More</button></a>
+     
+    </div>
+    <div class="lesson">
+      <div class="lesson-icon">
+        <img src="https://prog-8.com/images/html/advanced/php.png">
+        <p class="nma">Effects on life</p>
+      </div>
+      <p class="text-contents">Nickelodeon has announced to create two podcasts based on, SpongeBob and Avatar: The Last Airbender.</p>
+      <br>
+        <a href="https://www.gamespot.com/articles/nickelodeon-is-launching-spongebob-and-avatar-podcasts-beginning-in-june/1100-6491508/" target="_blank"><button class="rm">Read More</button></a>
+    </div>
+    <div class="clear"></div>
+  </div>
+  </div>
+  </div>
+    <!-- Article Section end-->
+
+    
+
+    <!-- About Us Section -->
+
+    <div class="abtUs" id="aboutUs">
+      <h1 id="tg">COVID STATISTICS</h1>
+      <div class="top">
+          <div class="top-left t1">
+              <div class="tl">
+                  <h1 class="glow2">WeCare</h1>
+                  <br>
+                  <br>
+                  <p>WeCare is a perfect destination for Health Freaks.
+                      It is made by health enthusiasts,for health enthusiasts and of health enthusiasts!!!
+                  </p>
+
+                   
+                   <div class="new">
+                   <div class="sym1">
+                     <span><i class="fa fa-desktop" id="i1"></i></span>
+                     <span class="wr" id="i3">&ensp;COVID PATIENTS &emsp;&emsp;&emsp;</span>
+                     <br><br>
+                     <span id="ko" class="cv">&emsp;&emsp;&emsp;3,25,710 &emsp;&emsp;&emsp;</span>
+                    
+                    
+                 </div>
+                 <br>
+                 
+                 <div class="sym2">
+                  <span><i class="fa fa-power-off" id="i2"></i></span>
+                  <span class="wr" id="i4">&ensp;RECOVERED</span>
+                  <br><br>
+                  <span id="ko2" class="cv">&emsp;&emsp;&emsp;&emsp;11,51,953</span>
+                 </div>
+                </div>
+                  
+                   
+              </div>
+          </div>
+          <div class="top-rt t1">
+              <div class="rev-wrapper">
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+              <div class="face" ></div>
+            </div></div>
+      </div>
+      <div class="ftr">
+          <div class="hd-ftr">
+              <h1 class="fh" id="feature">SERVICES</h1>
+              <p class="fp">Our platform is the best because it is has been designed for the best like you. YUP!! It's you reading this :) </p>
+          </div>
+          <div class="card-box ">
+              <div class="card-rev c1 ">
+                  <div class="icon-hold">
+                      <span><i class="fa fa-desktop" id="icon"></i></span>
+                  </div>
+                  <h2>Medical Counselling</h2>
+                  <p>Discover,play and get involved with games as they evolve.Be the first one to see what's coming and be a part of this amazing journey.</p>
+                 
+              </div>
+              
+              <div class="card-rev c2"><div class="icon-hold">
+                  <span><i class="far fa-clock" id="icon2"></i></span>
+              </div>
+              <h2>Available 24 X 7</h2>
+              <p>No matter day or night,we are here to help you play and make you feel most pride.Enjoy your fun ride and feel light.</p></div>
+              <div class="card-rev c3"><div class="icon-hold">
+                  <span><i class="fas fa-users" id="icon3"></i>
+                  </span>
+              </div>
+              <h2>Best for all age groups</h2>
+              <p>Be it a girl or a boy,young or old,We have a platter full of fun and froll for all of you because age is just a number.</p></div>
+          </div>
+      </div>
+      <div class="company-rev">
+          <h1 id="hl">Our Friendly Associates</h1>
+          <div class="containers-rev">
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="carousel multi-item-carousel slide" id="myCarousel" data-ride="carousel">
+                    <div class="carousel-inner">
+            
+                      <div class="item active">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="img/h1.jpg" class="img-responsive center-block imgset-rev"></a>
+                          
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="img/hh.jpg" class="img-responsive center-block imgset-rev"></a>
+                         
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="img/h2.jpg" class="img-responsive center-block imgset-rev"></a>
+                         
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="img/h3.jpg" class="img-responsive center-block imgset-rev"></a>
+                          
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="img/h4.jpg" class="img-responsive center-block imgset-rev"></a>
+                          
+                        </div>
+                      </div>
+            
+                      <div class="item">
+                        <div class="col-xs-12 col-sm-6 col-md-2">
+                          <a href="#"><img src="img/h55.jpg" class="img-responsive center-block imgset-rev"></a>
+                         
+                        </div>
+                      </div>
+            
+                    </div>
+            
+                    <div id="slider-control">
+                    <a class="left carousel-control pn pnl" href="#myCarousel" data-slide="prev">&#139;</a>
+                    <a class="right carousel-control pn pnr" href="#myCarousel" data-slide="next">&#155;</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+</div>
+      
+      <div class="team">
+          <h1 class="hmeet">Consult the top Doctors</h1>
+          
+          <marquee style="font-size: large;background-color: rgb(192, 241, 232);color: black;height: 30px;top: 20px;margin-bottom: 10px;width: 90%;">Just take your cursor on the Doctors image to know more about the doctor!!</marquee>
+          <div class="crds">
+              <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Review_final/d1.jpg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                      <br>
+                      <br>
+                      <br>
+                      <h1>  DR.PRIYA SINGH </h1>
+                      <h2 > Gynaecologist </h2>
+                      <br>
+                      <p> WeCare Health Services </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Review_final/d2.jpg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                      <br>
+                      <br>
+                      <br>
+                      <h1>  DR.RAJEEV SHAH </h1>
+                      <h2 > Head of Services </h2>
+                      <br>
+                      <p> WeCare Health Services </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Review_final/d5.jpg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                      <br>
+                      <br>
+                      <br>
+                      <h1> DR.RAKHI TANDON </h1>
+                      <h2 > Senior Consultant </h2>
+                      <br>
+                      <p> WeCare Health Services </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Review_final/d4.jpg" alt="Avatar" class="card-img">
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <br>
+                        <br>
+                      <h1>  DR.BENT LOAURIS  </h1>
+                      <h2 > Orthopaedician </h2>
+                      <br>
+                      <p>WeCare Health Services </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+      <div class="scl-icons">
+          <ul class="footer downsocialicons hor-list">
+              <li class="fb"><a href="https://www.facebook.com/ABCD-GAMES-103140898592339"  target="_blank" ><span><i class="fa fa-facebook-f"></i></span></a></li>
+              <li class="twt"><a href="https://twitter.com/AbcdGames" target="_blank"><span><i class="fa fa-twitter"></i></span></a></li>
+              <li class="ig"><a href="https://www.instagram.com/abcdgames.in/" target="_blank"><span><i class="fa fa-instagram"></i></span></a></li>
+              <li class="ggl"><a href="https://www.google.com/" target="_blank"><span><i class="fa fa-google"></i></span></a></li>
+              <li class="link"><a href="https://twitter.com/AbcdGames" target="_blank"><span><i class="fa fa-linkedin"></i></span></a></li>
+              <li class="mail"><a href = "mailto: abcdgames.in@gmail.com" id="mymail"> &nbsp;&nbsp;&ensp;&ensp;&emsp;&nbsp;@weCare.in</a></li>
+          </ul>
+
+      </div>
+      
+  </div>
+
+     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/carousel.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+ 
+        
+
+
+         <!-- trending  -->
+      <script>var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript" src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script type="text/javascript" src="bg.js"></script>
+<!--  -->
+<script> 
+function openCat(){
+  var v = document.getElementById("catblock");
+  if (v.style.display == "none") {
+    v.style.display = "block";
+  } 
+  else {
+    v.style.display = "none";
+  }
+}
+</script>
+
+<script>
+	function myFunction() {
+    alert("Please Login First!");
+}
+</script>
+
+<script type="text/javascript">
+  (function($){
+      var loverlay = document.getElementById("loverlay");
+      window.addEventListener('load', function(){
+        //loverlay.style.display = 'none';
+        jQuery("#loverlay").slideUp();
+      });
+    }(jQuery))
+  </script>
+	
+</body>
+</html>
